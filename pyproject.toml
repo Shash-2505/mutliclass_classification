@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "multiclass-classification"
+version = "0.1.0"
+description = "This project contains code for multi-class classification"
+authors = ["Shashank S <sss.shashank@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.0.1"
+pandas = "^2.0"
+scikit-learn = "^1.5.1"
+PyYAML = "^6.0.1"
+lightgbm = "^4.5.0"
+bayesian-optimization = "^1.5.1"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.2.4"
+matplotlib = "^3.7.0"
+seaborn = "^0.13.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
